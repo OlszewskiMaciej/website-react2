@@ -18,6 +18,7 @@ function App() {
         <Route path='/projects' component={Projects} />
         <Route path='/products' component={Products} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
