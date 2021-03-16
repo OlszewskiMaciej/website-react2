@@ -5,12 +5,14 @@ import Services from './pages/Services/Services';
 import Projects from './pages/Projects/Projects';
 import Products from './pages/Products/Products';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import { Navbar, Footer } from './components';
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
